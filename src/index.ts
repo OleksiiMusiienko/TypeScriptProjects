@@ -53,7 +53,7 @@ async function deleteTask(){
     console.log(chalk.redBright("Enter the task number to delet: "));
     await input();
     let choice = Number(inputData);
-    if (isNaN(choice)) {
+    if (!isNaN(choice)) {
         removeTask(choice);
     }
 }
